@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+</head>
+<body>
+    <!--Heading & Paragraph-->
+    <h2>Reopening Schools</h2>
+    <p>The government is considering reopening educational institutions in  phases with universities set to be the first to resume in-person classes  amid the Covid-19 pandemic.</p>
+    <p>As a large number of university  teachers and students have either been fully vaccinated or will get both  doses of Covid-19 vaccine soon, in-person classes will begin in  universities first. Colleges and schools will also reopen following  universities, said senior education ministry officials.</p>
+
+    <!--Formatting-->
+    <p><b><u>Following</u></b> the decision to close <i>educational</i> institutions, the government launched TV education programmes through  state-run <strong>Sangsad television</strong> channel for secondary and <mark><em>primary students</em></mark> primary students.  Later, it asked all schools to introduce online education. Most  students in urban areas have access to learning through the internet,  but the digital divide has so far proved to be a great disadvantage for  underprivileged learners, mainly due to a lack of devices and poor  access to the internet.</p>
+    Taka <del>5000</del> 4000<br>
+    H<sub>2</sub>O<br>
+    a<sup>2</sup>+b<sup>2</sup>
+
+    <!--Comment & Quotations-->
+    <blockquote>However, if any Covid-19 symptoms are detected on arrival, passenger will be sent to government authorised hospital for further check-up or will be sent to isolation at government nominated facilities or hotels at own expenses, the circular also states.</blockquote>
+
+    <!--Attributes & Anchor/Link-->
+    <a href="https://www.thedailystar.net/" target="_blank">The Daily Star</a><br><br>
+
+    <!--File Path & Images-->
+    <img src="images/nature.jpg" width="200" alt="Nature">
+
+    <!--Table-->
+    <table>
+        <tr>
+            <th>Roll</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Salam</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Kalam</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <!--List-->
+    <ol type="i">
+        <li>Book</li>
+        <li>Pen</li>
+        <li>Pencil</li>
+    </ol>
+    <ul type="circle">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+
+    <!--Form-->
+    <form>
+        <label for="user"><h5>Name</h5></label>
+        <input type="text" id="user" placeholder="Write your name">
+        <label for="password"><h5>Password</h5></label>
+        <input type="password" id="password" placeholder="Type password">
+        <h5>Gender</h5>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+        <h5>Favorite Subject</h5>
+        <input type="checkbox" name="subject" id="physics" value="physics"><label for="physics">Physics</label>
+        <input type="checkbox" name="subject" id="math" value="math"><label for="math">Math</label>
+        <input type="checkbox" name="subject" id="biology" value="biology"><label for="biology">Biology</label>
+        <input type="checkbox" name="subject" id="chemistry" value="chemistry"><label for="chemistry">Chemistry</label>
+        <h5>Country</h5>
+        <select name="country" id="country">
+            <option disabled selected>Choose Country</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="america">America</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="japan">Japan</option>
+        </select>
+        <h5>Profile Picture</h5>
+        <input type="file" name="" id="">
+        <h5>Message</h5>
+        <textarea cols="30" rows="5"></textarea><br>
+        <button>Submit</button>
+        <input type="reset" value="Reset">
+    </form><br>
+
+    <!--Audio & Video-->
+    <audio controls>
+        <source src="audio/test.mp3" type="audio/mp3"> 
+    </audio><br>
+    <video controls width="400px" height="250px">
+        <source src="video/test.mp4" type="video/mp4">
+    </video><br>
+
+    <!--Iframe Youtube & Vimeo-->
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/_pChTSDsNck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+    <iframe src="https://player.vimeo.com/video/192330474?h=33d3352947" width="400" height="250" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
