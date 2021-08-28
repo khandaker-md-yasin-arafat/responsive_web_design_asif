@@ -1,0 +1,205 @@
+/* For Custom Font */
+
+@font-face {
+    font-family: 'Lemon Brownies';
+    src: url('fonts/LemonBrownies.woff2') format('woff2'),
+        url('fonts/LemonBrownies.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Gradient */
+
+.box1{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, #3d7eaa, #ffe47a);
+    /* background: radial-gradient(#3d7eaa, #ffe47a); */
+}
+
+/* Shadow */
+
+.box2{
+    width: 50%;
+    height: 500px;
+    background: salmon;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+.text1{
+    text-shadow: 5px 5px 10px red;
+}
+
+/* Custom Font */
+
+.text2{
+    font-family: 'Lemon Brownies';
+}
+
+/* Transform */
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background: salmon;
+    transition: 0.3s;
+}
+.box3:hover{
+    transform: translate(50%, 100%);
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    background: salmon;
+    transition: 0.3s;
+}
+.box4:hover{
+    transform: scale(1.5, 1);
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    background: salmon;
+    transition: 0.3s;
+}
+.box5:hover{
+    transform: rotate(45deg);
+}
+.box6{
+    width: 200px;
+    height: 200px;
+    background: salmon;
+    transition: 0.3s;
+}
+.box6:hover{
+    transform: skew(10deg, 25deg);
+}
+
+/* Animation */
+
+.box7{
+    width: 200px;
+    height: 200px;
+    background: salmon;
+    transition: 0.3s;
+    animation: example 3s;
+    animation-iteration-count: 5;
+}
+@keyframes example{
+    from{
+        background: salmon;
+    }
+    to{
+        background: lightblue;
+    }
+}
+.box8{
+    width: 200px;
+    height: 200px;
+    background: salmon;
+    position: relative;
+    transition: 0.3s;
+    animation: test 3s infinite alternate;
+}
+@keyframes test{
+    0%{
+        top: 0;
+        left: 0;
+        background: salmon;
+    }
+    25%{
+        top: 0;
+        left: 100px;
+        background: seagreen;
+    }
+    50%{
+        top: 100px;
+        left: 100px;
+        background: sienna;
+    }
+    75%{
+        top: 100px;
+        left: 0;
+        background: skyblue;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background: tan;
+    }
+}
+
+/* Animation Example */
+
+.loader{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(0, 128, 128, 1);
+    animation: loader 1.5s infinite;
+}
+@keyframes loader{
+    0%{
+        background: rgba(0, 128, 128, 1);
+        transform: scale(0);
+    }
+    100%{
+        background: rgba(0, 128, 128, 0);
+        transform: scale(2);
+    }
+}
+
+/* Max Width & Min Width */
+
+.max1{
+    max-width: 100%;
+}
+.max2{
+    max-width: 100%;
+}
+.max3{
+    min-width: 1200px;
+}
+.max4{
+    min-width: 1200px;
+}
+
+/* Responsive & Media Query */
+.responsive{
+    background: url(images/big2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #000;
+    text-align: center;
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.content h1{
+    font-size: 80px;
+}
+.content p{
+    font-size: 35px;
+}
+@media (min-width:600px) and (max-width:750px){
+    .content p br{
+        display: none;
+    }
+}
+@media (max-width:599px){
+    .content h1{
+        font-size: 48px;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    .content p br{
+        display: none;
+    }
+}
