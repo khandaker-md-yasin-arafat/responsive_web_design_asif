@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #273C66;
+    padding-right: 35px;
+}
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin-left: 25px;
+    height: 90px;
+    line-height: 90px;
+}
+.main-menu{
+    list-style: none;
+}
+.main-menu li{
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s;
+    position:relative;
+}
+.main-menu li::before{
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #0EB582;
+    opacity: 0;
+    visibility: hidden;
+}
+.main-menu li:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+.main-menu li:hover, .main-menu li.active{
+    color: #0EB582;
+
+}
+.main-menu li a{
+    display: block;
+}
+.logo{
+    padding: 22px 20px 18px 20px;
+    background: #273C66;
+    width: 200px;
+    height: 90px;
+}
+.logo img{
+    width: 100%;
+}
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    width: 210px;
+    height: 40px;
+    border: 1px solid gray;
+    margin-right: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+.search input::placeholder{
+    color: lightslategray;
+    font-weight: 600;
+}
+.search i{
+    color: #fff;
+}
+.cart, .user{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid lightslategray;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 8px;
+    position: relative;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.cart::before{
+    content: '0';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    background: #0EB582;
+    color: #fff;
+    font-size: 12px;
+}
+.cart i, .user i{
+    color: #fff;
+    font-size: 14px;
+}
+.cart:hover, .user:hover{
+    background: #0EB582;
+    border: 1px solid #0EB582;
+}
+.sidebar{
+    margin-left: 10px;
+}
+.sidebar i{
+    color: #fff;
+    font-size: 23px;
+}
