@@ -1,0 +1,255 @@
+@media(min-width: 1200px){}
+
+@media(min-width: 992px) and (max-width: 1199px){
+    .foot-search input {
+        width: 240px;
+    }
+    .subscribe-btn {
+        width: 120px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .logo{
+        width: 145px;
+    }
+    .main-menu li{
+        margin-left: 18px;
+        font-size: 14px;
+    }
+    .main-menu li.nav-btn a{
+        padding: 10px 25px;
+    }
+    .home-content h1 {
+        font-size: 52px;
+        margin-bottom: 15px;
+    }
+    .home-content p {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    .home-search input {
+        width: 330px;
+    }
+    .home-btn {
+        width: 140px;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    .counter-title {
+        font-size: 25px;
+    }
+    .counter-text {
+        font-size: 16px;
+    }
+    .section-title h3, .boat-title h3{
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .section-title p, .boat-title p {
+        font-size: 18px;
+    }
+    .single-destination-content h4, .single-boat-content h4 {
+        font-size: 22px;
+    }
+    .single-destination-content p, .single-boat-content p {
+        font-size: 16px;
+    }
+    .c2a h2 {
+        font-size: 55px;
+    }
+    .c2a p {
+        font-size: 23px;
+    }
+    footer .col-20, footer .col-40{
+        width: 50%;
+    }
+    .foot-menu{
+        margin-bottom: 40px;
+    }
+    .foot-search input {
+        width: 210px;
+    }
+    .subscribe-btn {
+        width: 105px;
+    }
+}
+
+@media(max-width: 767px){
+    .col-20,
+    .col-25,
+    .col-33,
+    .col-40,
+    .col-50,
+    .col-66,
+    .col-75,
+    .col-80{
+        width: 100%;
+    }
+    .logo{
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .main-menu {
+        text-align: center;
+        float: none;
+    }
+    .main-menu li {
+        margin-left: 10px;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .main-menu li.nav-btn a {
+        padding: 8px 15px;
+    }
+    .main-menu li.nav-btn{
+        margin-left: 10px;
+    }
+    .home{
+        height: 600px;
+    }
+    .home-search input {
+        width: 150px;
+        height: 37px;
+    }
+    .home-search input::placeholder{
+        font-size: 12px;
+    }
+    .home-btn{
+        width: 115px;
+        height: 37px;
+    }
+    .home-btn img{
+        margin-right: 5px;
+        width: 13px;
+    }
+    .btn{
+        font-size: 11px;
+    }
+    .home-content h1 {
+        font-size: 32px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+    .counter-wrapper{
+        height: unset;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .counter-title {
+        font-size: 25px;
+    }
+    .counter-text {
+        font-size: 16px;
+    }
+    .single-counter {
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .single-counter::before{
+        content: none;
+    }
+    .no-line{
+        border-bottom: none;
+    }
+    .destination{
+        padding-top: 0;
+        padding-bottom: 70px;
+        margin-top: -35px;
+    }
+    .single-destination span, .single-boat span {
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .section-title{
+        margin-bottom: 65px;
+    }
+    .section-title h3{
+        font-size: 24px;
+    }
+    .section-title p{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .single-destination, .single-boat{
+        padding: 18px 15px;
+    }
+    .single-destination span img{
+        width: 13px;
+        margin-right: 5px;
+    }
+    .single-destination-content h4, .single-boat-content h4 {
+        font-size: 20px;
+    }
+    .single-destination-content p, .single-boat-content p {
+        font-size: 15px;
+    }
+    .dest-btn{
+        padding: 12px 15px;
+    }
+    .c2a h2 {
+        font-size: 32px;
+    }
+    .c2a p {
+        font-size: 16px;
+    }
+    .c2a-btn {
+        padding: 12px;
+    }
+    .boat-title h3 {
+        font-size: 24px;
+    }
+    .boat-title p{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .col-20 {
+        text-align: center;
+    }
+    .col-40{
+        text-align: center;
+    }
+    .foot-title {
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+    .foot-search input {
+        width: 150px;
+    }
+    .foot-search {
+        height: 35px;
+    }
+    .subscribe-btn {
+        width: 90px;
+    }
+    .foot-contact li span i {
+        margin-right: 6px;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767px){
+    .home-content h1{
+        font-size: 38px;
+    }
+    .home-content p{
+        font-size: 17px;
+    }
+    .home-search input{
+        width: 230px;
+    }
+    .counter-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .counter-wrapper .col-25{
+        width: 50%;
+    }
+    .counter-wrapper .col-25:nth-child(3) .single-counter{
+        border-bottom: none;
+    }
+}
+
