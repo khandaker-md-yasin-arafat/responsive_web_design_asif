@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic CSS */
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+}
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.container::before, .container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.col-10{
+    width: 10%;
+    float: left;
+    padding: 0 15px;
+}
+.col-20{
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+}
+.col-25{
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+}
+.col-33{
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+}
+.col-40{
+    width: 40%;
+    float: left;
+    padding: 0 15px;
+}
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+.col-60{
+    width: 60%;
+    float: left;
+    padding: 0 15px;
+}
+.col-66{
+    width: 66.66%;
+    float: left;
+    padding: 0 15px;
+}
+.col-70{
+    width: 70%;
+    float: left;
+    padding: 0 15px;
+}
+.col-75{
+    width: 75%;
+    float: left;
+    padding: 0 15px;
+}
+.col-80{
+    width: 80%;
+    float: left;
+    padding: 0 15px;
+}
+.col-100{
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+}
+.btn {
+    background: #00bc9c;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #02a88d;
+}
+
+/* Header CSS */
+.head-contact{
+    background: #f5f7fa;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e6e9ed;
+    color: #506a85;
+    font-size: 15px;
+    font-weight: 700;
+}
+.envelope{
+    margin-right: 30px;
+}
+.social-media{
+    float: right;
+}
+.email-phone i{
+    padding-right: 10px;
+}
+.social-media a{
+    padding-right: 20px;
+}
+.social-media a:last-child{
+    padding-right: 0;
+}
+.head{
+    background: #fff;
+    height: 100px;
+    line-height: 100px;
+    color: #506a85;
+    overflow: hidden;
+}
+.main-menu li{
+    list-style: none;
+    display: inline-block;
+}
+.main-menu li a{
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.search-icon i{
+    float: right;
+    height: 100px;
+    line-height: 100px;
+}
+.logo img {
+    padding-top: 30px;
+}
+
+/* Home CSS */
+.home{
+    background-image: url(../images/home/reen.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home-content h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.home-content p {
+    font-size: 27px;
+    width: 1014px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #a3b1bf;
+}
+.home-btn{
+    padding: 20px 70px;
+}
+
+/* Features CSS */
+.features{
+    padding: 120px 0;
+}
+.features-content, .latest-work-content{
+    text-align: center;
+}
+.features-content h2, .latest-work-content h2, .find-work-content h2{
+    color: #506a85;
+    font-size: 48px;
+    padding-bottom: 40px;
+}
+.features-content p, .latest-work-content p, .find-work-content p{
+    color: #506a85;
+    font-size: 28px;
+} 
+.features-details{
+    display: flex;
+    padding-top: 60px;
+}
+.features-details i{
+    font-size: 50px;
+    color: #00bc9c;
+    padding-right: 35px;
+}
+.features-details-content h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    color: #506a85;
+}
+.features-details-content p{
+    color: #506a85;
+}
+
+/* Latest Work CSS */
+.latest-work{
+    background: #f2f5f7;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.latest-work-content{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.latest-work-card{
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.latest-work-card img{
+    width: 100%;
+}
+.card-container{
+    text-align: center;
+    padding: 40px;
+    color: #506a85;
+}
+.card-container h3{
+    padding-bottom: 10px;
+}
+.small-card{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.small-card img{
+    width: 100%;
+}
+.slide-btn{
+    display: flex;
+    justify-content: center;
+}
+.slide-btn-bullet{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #506a85;
+    margin-right: 8px;
+}
+.silde-btn-color{
+    background: #00bc9c;
+}
+.no-margin{
+    margin: 0;
+}
+
+/* Find Work CSS */
+.find-work{
+    background: #fff;
+    padding: 120px 0;
+}
+.find-work-content{
+    text-align: center;
+}
+.find-work-content p{
+    padding-bottom: 50px;
+}
+.btn-find-work{
+    padding: 15px 20px;
+}
+
+/* About CSS */
+.about-part{
+    background: #2f4052;
+    padding: 100px 0;
+    color: #fff;
+}
+.about-part h3{
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-part p, span{
+    color: #a3b1bf;
+}
+.about-content i{
+    font-size: 11px;
+    padding-left: 5px;
+}
+.about-content img{
+    padding-bottom: 16px;
+}
+.about-content p{
+    padding-bottom: 16px;
+}
+.about-latest-work img{
+    width: 125%;
+    margin-left: -15px;
+}
+.about-get-touch p{
+    padding-bottom: 15px;
+}
+.about-get-touch span{
+    display: block;
+    padding-top: 8px;
+}  
+.about-get-touch i{
+    margin-right: 10px;
+}
+.about-updates p{
+    padding-bottom: 20px;
+}
+.about-updates input{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 0;
+    background: #4e5c6c;
+    position: relative;
+}
+.about-updates input::placeholder{
+    color: #828e99;
+    padding: 5px;
+}
+.about-updates .btn-about{
+    padding: 8px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+/* Footer CSS */
+.footer{
+    background: #283645;
+    color: #a3b1bf;
+    height: 80px;
+    line-height: 80px;
+}
+.footer-menu ul{
+    float: right;
+}
+.footer-menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 21px;
+    position: relative;
+}
+.footer-menu ul li::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #a3b1bf;
+    margin-top: 40px;
+    margin-left: 25%;
+}
+.footer-menu ul li:last-child{
+    padding-right: 0;
+}
+.footer-menu ul li:last-child::after{
+    background: none;
+}
+.footer i{
+    margin-top: -60px;
+    float: right;
+    background: #3c5065;
+    padding: 13px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
